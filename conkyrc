@@ -47,7 +47,7 @@ Uptime ${color #AAAAAA}$alignr${uptime}${color #505050}
 File System $alignr${fs_type}
 
 ${font Arial:bold:size=10}${color #00AAFF}CPU ${color #0000AA}${hr 2}
-$font${color #505050}Temp: $alignr ${color #AAAAAA}${exec /opt/vc/bin/vcgencmd measure_temp | cut -c6-9} C
+$font${color #505050}Temp: $alignr ${color #AAAAAA}${exec vcgencmd measure_temp | cut -c6-9} C
 $font${color #505050}CPU1  ${color #AAAAAA}${cpu cpu1}%${color #505050} ${cpubar cpu1}
 CPU2  ${color #AAAAAA}${cpu cpu2}%${color #505050} ${cpubar cpu2}
 CPU3  ${color #AAAAAA}${cpu cpu3}%${color #505050} ${cpubar cpu3}
